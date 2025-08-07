@@ -23,12 +23,8 @@ public class TaskController {
 
         System.out.println(taskModel.toString());
 
-        // if (taskModel.equals("null")) {
-        // return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Erro ao salvar");
-        // }
-
         var response = new HashMap<>();
-        response.put("message", "USuario criado com sucesso");
+        response.put("message", "Usuário criado com sucesso!");
         response.put("success", true);
 
         this.taskRepository.save(taskModel);
