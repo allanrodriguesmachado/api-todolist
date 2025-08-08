@@ -21,7 +21,7 @@ public class TaskController {
     @PostMapping("/create")
     public ResponseEntity createTask(@RequestBody TaskModel taskModel) {
 
-        System.out.println(taskModel.toString());
+        System.out.println("Hello WOrld");
 
         var response = new HashMap<>();
         response.put("message", "Usuário criado com sucesso!");
